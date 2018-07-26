@@ -46,15 +46,18 @@ def WriteDataToFile(file_path,data):
 
 #下面控制语句的执行	
 if __name__ == "__main__":
+    '''
     main_page = OpenPage("http://www.shengxu6.com/book/2967.html")
     #获取各个章节的url
     url_list = ParseMainPage(main_page)
     for url in url_list:
-        print "Clone url=" + url
+        #print "Clone url=" + url
         detail_page = OpenPage(url)
         title,content = ParseDetailPage(detail_page)
+        print title
         data = "\n\n\n" + title + "\n\n\n" + content
         WriteDataToFile("mpnth.txt",data)
     	WriteDataToFile("mpnth.txt",data)
-	
 print "爬取完成"
+    '''
+    print OpenPage("http://www.shengxu6.com/book/2967.html")
