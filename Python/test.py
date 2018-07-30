@@ -2,7 +2,11 @@
 #coding:utf-8
 
 print "Hello world!"
-def Print():
-	print "success"
+class C(object):
+    val = 100
+    def Print(self):
+        print "hello world!"
 
-Print()
+c = C()
+print c.val
+c.Print()

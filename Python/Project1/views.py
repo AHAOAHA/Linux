@@ -36,7 +36,7 @@ def ParseDetailPage(page):
 
 #把获取到的内容写到文件中
 def WriteDataToFile(file_path,data):
-    f = open("file_path","a+")
+    f = open("file_path","w")
     data = data.encode("utf-8")
     f.write(data)
     f.close()
@@ -46,7 +46,6 @@ def WriteDataToFile(file_path,data):
 
 #下面控制语句的执行	
 if __name__ == "__main__":
-    '''
     main_page = OpenPage("http://www.shengxu6.com/book/2967.html")
     #获取各个章节的url
     url_list = ParseMainPage(main_page)
@@ -59,5 +58,9 @@ if __name__ == "__main__":
         WriteDataToFile("mpnth.txt",data)
     	WriteDataToFile("mpnth.txt",data)
 print "爬取完成"
-    '''
-    print OpenPage("http://www.shengxu6.com/book/2967.html")
+
+'''
+    main_page = OpenPage("http://www.shengxu6.com/book/2967.html")
+    url_list = ParseMainPage(main_page)
+    print url_list
+'''
