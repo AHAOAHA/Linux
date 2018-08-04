@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding:utf-8
-
+import MulTable
 print "Hello world!"
 class C(object):
     val = 100
@@ -10,3 +10,4 @@ class C(object):
 c = C()
 print c.val
 c.Print()
+MulTable()
