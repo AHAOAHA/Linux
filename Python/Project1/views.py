@@ -46,7 +46,7 @@ def WriteDataToFile(file_path,data):
 
 #下面控制语句的执行	
 if __name__ == "__main__":
-    main_page = OpenPage("http://www.shengxu6.com/book/2967.html")
+   main_page = OpenPage("http://www.shengxu6.com/book/2967.html")
     #获取各个章节的url
     url_list = ParseMainPage(main_page)
     for url in url_list:

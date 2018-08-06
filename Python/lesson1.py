@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #coding:utf-8
+from MulTable import *
 '''
 for i in range(1,10):
     print i
@@ -29,3 +30,4 @@ def Add(x,y):
 
 if __name__=="__main__":
     print Add(2,3)
+    MulTable()

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #coding:utf-8
-import MulTable
+from MulTable import *
+from Equation import *
 print "Hello world!"
 class C(object):
     val = 100
@@ -10,4 +11,6 @@ class C(object):
 c = C()
 print c.val
 c.Print()
-MulTable()
+print "ok"
+a,b,c=input("请输入a,b,c")
+Equ(a,b,c)

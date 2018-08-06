@@ -4,9 +4,9 @@
 using namespace std;
 int main()
 {
-	string a;
-	a="hello";
-	cout<<a<<endl;
-	cout<<"hello world!"<<endl;
+	while(1)
+	{
+
+	}
 	return 0;
 }
