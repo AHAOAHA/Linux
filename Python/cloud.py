@@ -4,6 +4,7 @@ import urllib2
 from bs4 import BeautifulSoup
 import sys
 
+
 #取出页面内容
 def OpenPage(url):
 	head = {}
