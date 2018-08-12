@@ -14,3 +14,4 @@ c.Print()
 print "ok"
 a,b,c=input("请输入a,b,c")
 Equ(a,b,c)
+print "hahah"
