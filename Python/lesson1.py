@@ -16,5 +16,30 @@
 #for item in range(0,11):
 #    print item
 
-str = raw_input()
-print strlen(str)
+#str = "hello world!"
+#for item in str:
+#    print item
+#i = 0
+#while i<len(str):
+#    print str[i]
+#    i = i + 1
+#print "请输入一个数字："
+#num = input()
+
+#if num < 0:
+#    print "负数"
+#elif num > 0:
+#    print "正数"
+#else:
+#    print 0
+arr = []
+_sum = 0
+count = 0
+arr = input()
+for item in arr:
+    print item
+for item in arr:
+    _sum = item + _sum
+    count = count + 1
+print _sum/count
+
