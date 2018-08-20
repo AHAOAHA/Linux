@@ -42,4 +42,5 @@ for item in arr:
     _sum = item + _sum
     count = count + 1
 print _sum/count
+#ok
 
