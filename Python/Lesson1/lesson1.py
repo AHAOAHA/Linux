@@ -94,9 +94,3 @@ if __name__ == "__main__":
     print "请选择："
     o = input()
     print chose.get(o)(array)
-
-
-
-
-
-
