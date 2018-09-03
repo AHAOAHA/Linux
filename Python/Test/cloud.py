@@ -17,4 +17,8 @@ def OpenPage(url):
 if __name__ == "__main__":
     print "请输入要爬取的网页url"
     url = raw_input()
-    print OpenPage(url)
+    i = 10
+    while i>0:
+        OpenPage(url)
+        i = i - 1
+    print "over"
