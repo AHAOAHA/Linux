@@ -26,16 +26,16 @@ def getProxyIp():
         
         soup = BeautifulSoup(html)
         
-        table = soup.find('table').get_text()
+        table = soup.find('table')
         
-        print table
-        '''
-        tds = table.find_all('td',{'data-title':'IP'})
+        tbody = table.find('tbody')
+        
+        tds = tbody.find_all('tr')
         print tds
-        
+        '''
         # 解析得到代理ip的地址，端口，和类型
         for item in tds:
-            ips = item.find('td')
+            ips = item.find_all('td':'data-title')
             print ips
             
             print tds.get_text()
