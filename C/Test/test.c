@@ -1,11 +1,10 @@
-#include<iostream>
-#include<string.h>
-using namespace std;
+#include<./test.h>
+void Hello()
+{
+    printf("hello Linux\n");
+}
 int main()
 {
-	char* p = "\x111";
-    cout<<strlen(p)<<endl;
-    cout<<*p<<endl;
-	cout<<"test"<<endl;
-	return 0;
+    Hello();
+    return 0;
 }
