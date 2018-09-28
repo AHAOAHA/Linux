@@ -1,5 +1,4 @@
-include"stdio.h"
-
+#include<stdio.h>
 void Hello(int i)
 {
     printf("hello Linux   %d\n",i);
