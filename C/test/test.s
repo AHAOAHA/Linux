@@ -7,7 +7,7 @@
 	.globl	Hello
 	.type	Hello, @function
 Hello:
-.LFB0:
+.LFB5:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -26,12 +26,16 @@ Hello:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE0:
+.LFE5:
 	.size	Hello, .-Hello
+	.section	.rodata
+.LC1:
+	.string	"error"
+	.text
 	.globl	main
 	.type	main, @function
 main:
-.LFB1:
+.LFB6:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -39,17 +43,27 @@ main:
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
-	movl	$1, -8(%rbp)
-	movl	$10, -4(%rbp)
-	movl	-4(%rbp), %eax
-	movl	%eax, %edi
-	call	Hello
-	movl	$0, %eax
-	leave
-	.cfi_def_cfa 7, 8
-	ret
+	call	fork@PLT
+	movl	%eax, -4(%rbp)
+	cmpl	$-1, -4(%rbp)
+	jne	.L3
+	leaq	.LC1(%rip), %rdi
+	call	puts@PLT
+	movl	$1, %edi
+	call	exit@PLT
+.L3:
+	cmpl	$0, -4(%rbp)
+	jne	.L4
+.L5:
+	movl	$2, %edi
+	call	sleep@PLT
+	jmp	.L5
+.L4:
+	movl	$1, %edi
+	call	sleep@PLT
+	jmp	.L4
 	.cfi_endproc
-.LFE1:
+.LFE6:
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu 7.3.0-16ubuntu3) 7.3.0"
 	.section	.note.GNU-stack,"",@progbits
