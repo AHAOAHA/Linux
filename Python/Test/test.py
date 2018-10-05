@@ -2,6 +2,7 @@
 #coding:utf-8
 from MulTable import *
 from Equation import *
+'''
 print "Hello world!"
 class C(object):
     val = 100
@@ -15,3 +16,7 @@ print "ok"
 a,b,c=input("请输入a,b,c")
 Equ(a,b,c)
 print "hahah"
+'''
+if __name__ == "__main__":
+    while True:
+        pass
