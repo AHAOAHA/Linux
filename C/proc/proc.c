@@ -12,5 +12,6 @@ int main()
 		usleep(100000);
 		++i;
 	}
+    printf("\n");
 	return 0;
 }
