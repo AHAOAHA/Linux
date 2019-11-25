@@ -1,0 +1,3 @@
+[submodule "subdir"]
+	path = subdir
+	url = git@github.com:AHAOAHA/comment-info.git
