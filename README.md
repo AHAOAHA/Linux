@@ -8,4 +8,4 @@
 
 未commit修改，通过`git checkout -f`强制切换分支。
 
-添加tag之后，master分支持续开发。
+添加`tag`之后，`master`持续提交，当需要`checkout`回到某`tag`处时，若此时分支下文件内容发送改变但未`commit`，会产生错误，`checkout`失败，使用`checkout -f`选项强制切换会丢失变更。
