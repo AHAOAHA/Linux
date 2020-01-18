@@ -13,7 +13,9 @@
 # Git LFS
 
 Git LFS用来管理项目中的大文件
+
 `git lfs install`打开项目LFS功能, 主要通过.gitattributes文件记录信息
+
 `git lfs track *.png`表示当前仓库通过LFS track所有.png文件的更改, 即使文件大小超过100M
 
 # third_party
