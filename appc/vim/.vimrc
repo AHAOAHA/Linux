@@ -17,10 +17,6 @@ set mouse=a
 " 为C程序设置自动缩进
 set cindent
 set autoindent
-set smartindent
-
-" 智能缩进
-set smartindent
 
 " 高亮显示匹配的括号
 set showmatch
@@ -44,3 +40,7 @@ autocmd FileType make set noexpandtab
 " 修改vim的颜色 
 set background=dark
 set t_Co=256
+
+" 光标所在行列高亮
+" set cursorcolumn
+set cursorline
