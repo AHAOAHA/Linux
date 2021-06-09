@@ -1,0 +1,23 @@
+! TrueType font
+XTerm*faceName:DejaVu Sans Mono:antilias=True
+
+! Chinese
+XTerm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True
+
+! font size
+XTerm*faceSize: 13
+XTerm*inputMethod:fcitx
+XTerm*SaveLines: 4096
+
+! color
+XTerm*background: black
+XTerm*foreground: lightyellow
+
+XTerm*geometry: 120x35+500+250
+XTerm*metaSendsEscape: true
+XTerm*eightBitInput: false
+XTerm*selectToClipboard: true
+xterm*utf8: true
+xterm*utf8Title: true
+XTerm*locale: zh_CN.UTF-8
+

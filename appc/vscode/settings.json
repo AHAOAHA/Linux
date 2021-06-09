@@ -1,0 +1,35 @@
+{
+    "editor.fontFamily": "'Cascadia Code',Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.fontWeight": 550,
+    "C_Cpp.errorSquiggles": "Enabled",
+    "cmake.configureOnOpen": true,
+    "[cpp]":{
+        "editor.wordBasedSuggestions": true,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "[c]": {
+        "editor.wordBasedSuggestions": true,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include/c++/4.9/**",
+        "/usr/include/x86_64-linux-gnu/c++/4.9/**",
+        "/usr/include/c++/4.9/backward/**",
+        "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/**",
+        "/usr/local/include/**",
+        "/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed/**",
+        "/usr/include/x86_64-linux-gnu/**",
+        "/usr/include/**"
+    ],
+    "C_Cpp.default.browse.databaseFilename": "${workspaceFolder}/.vscode/.browse.c_cpp.db",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++11",
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "One Dark Pro"
+}
