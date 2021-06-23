@@ -37,4 +37,6 @@
         "-count=1" // 消除单测缓存
     ],
     "go.toolsManagement.autoUpdate": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
 }
